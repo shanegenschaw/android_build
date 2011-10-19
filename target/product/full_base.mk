@@ -21,9 +21,9 @@
 $(call inherit-product, frameworks/base/data/sounds/AudioPackage5.mk)
 
 # Get the TTS language packs
-$(call inherit-product-if-exists, external/svox/pico/lang/all_pico_languages.mk)
+$(call inherit-product-if-exists, external/svox/pico/lang/PicoLangEnUsInSystem.mk)
 
 # Get the list of languages.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/language_english.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic.mk)
